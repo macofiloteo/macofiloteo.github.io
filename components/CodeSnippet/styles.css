@@ -1,0 +1,9 @@
+code.code-snippet {
+  font-family: "PT Serif", "sans-serif";
+  background-color: #1e1e1e;
+  font-size: 0.80em;
+  color: orange;
+  padding: 0.2em 0.4em;
+  border-radius: 0.20rem;
+  word-wrap: break-word;
+}

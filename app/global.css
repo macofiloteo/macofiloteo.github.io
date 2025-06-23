@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-body: "PT Serif", "sans-serif";
+  --breakpoint-xs: 321px;
+}
+
+article * {
+  word-wrap: break-word;
+}
+
+section h2 {
+  @apply text-3xl mb-4 font-medium;
+}
+
+section {
+  @apply mt-8 mb-8;
+}
