@@ -1,6 +1,7 @@
 import React from 'react';
 import CurrentPostMeta from './meta';
-import { PostImage, CodeSnippet, CodeBlock } from '@components';
+import { PostImage, CodeSnippet } from '@components/client';
+import { CodeBlock } from '@components/server';
 import defaultDisplayJPEG from '@assets/qmk-customize-oled/default-display.jpeg';
 import pressedKeyJPEG from '@assets/qmk-customize-oled/pressed.jpeg';
 import releasedKeyJPEG from '@assets/qmk-customize-oled/released.jpeg';
@@ -11,7 +12,7 @@ export default function Post() {
   return (
     <div className="mx-auto px-12 gap-10 place-content-center max-w-5xl">
       <div className="mt-6 xs:text-xl text-md leading-10">
-        <h1 className="text-4xl mb-1">{CurrentPostMeta.title}</h1>
+        <h1 className="mb-1">{CurrentPostMeta.title}</h1>
         <h3 className="text-gray-400 mb-4">
           {(new Date(CurrentPostMeta.date)).toLocaleDateString('en-us', { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' })}
         </h3>

@@ -3,7 +3,7 @@
 	"scripts": {
 		"dev": "next dev --turbo",
 		"build": "next build",
-	  "update-metadata": "npx tsx utils/update_posts_metadata.ts"
+	  "update-metadata": "npx tsx commands/update_posts_metadata.ts"
   },
 	"dependencies": {
 		"@segment/analytics-next": "^1.81.0",

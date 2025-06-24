@@ -1,5 +1,6 @@
 import React from 'react';
-import { CodeBlock, CodeSnippet, PostImage } from '@components';
+import { CodeSnippet, PostImage } from '@components/client';
+import { CodeBlock } from '@components/server';
 import CurrentPostMeta from './meta';
 import importPNG from '@assets/hiding-in-task-mgr/1imports.png';
 import referencedPNG from '@assets/hiding-in-task-mgr/ntquerysysprocess.png';
@@ -14,7 +15,7 @@ export default function Post() {
   return (
     <article className="mx-auto xs:px-12 px-8 gap-10 max-w-6xl place-content-center">
       <div className="mt-6 xs:text-xl text-md leading-10">
-        <h1 className="text-4xl mb-1">{CurrentPostMeta.title}</h1>
+        <h1 className="mb-1">{CurrentPostMeta.title}</h1>
         <h3 className="text-gray-400 mb-4">
           {(new Date(CurrentPostMeta.date)).toLocaleDateString('en-us', { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' })}
         </h3>

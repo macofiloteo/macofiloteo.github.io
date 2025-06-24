@@ -1,15 +1,15 @@
 'use client';
 
 import { useEffect } from 'react';
-import { AnalyticsBrowser } from '@segment/analytics-next'
+import { segment } from '@utils';
 import { usePathname } from 'next/navigation';
 
-const analytics = AnalyticsBrowser.load({ writeKey: 'aMRHH4QuZeV9B2z0xr0Xvb4YxwBeRExC' })
+// I really don't care if you can see my writeKey publicly lol
 
 export default function useVisitorTracker() {
   const pathname = usePathname();
   useEffect(() => {
-    analytics.track('page_view');
+    segment.track('page_view');
   }, [pathname]);
 }
 

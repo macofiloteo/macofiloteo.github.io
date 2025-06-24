@@ -1,6 +1,6 @@
 import React from 'react';
 import "./global.css";
-import { NavigationBar } from '@components';
+import { NavigationBar } from '@components/client';
 
 export default function RootLayout({
   children,
